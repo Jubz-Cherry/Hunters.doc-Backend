@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jubz-Cherry/Hunters.doc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jubz-Cherry/Hunters.doc/issues"
+  },
+  "homepage": "https://github.com/Jubz-Cherry/Hunters.doc#readme",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.6.0",
+    "mongoose": "^8.16.4",
+    "node": "^20.19.4",
+    "nodemailer": "^9.1.0",
+    "nodemon": "^3.1.10",
+    "resend": "^6.25.0",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui": "^5.32.14",
+    "swagger-ui-dist": "^5.32.14",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
