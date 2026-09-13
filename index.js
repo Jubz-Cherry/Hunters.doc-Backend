@@ -6,6 +6,10 @@ const path = require("path");
 
 require("dotenv").config();
 
+// Render (e a maioria dos PaaS) fica atrás de um único proxy reverso; sem isso o
+// express-rate-limit não confia no X-Forwarded-For e não consegue identificar o IP do cliente.
+app.set("trust proxy", 1);
+
 const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./config/swagger");
 
