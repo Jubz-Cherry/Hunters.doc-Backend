@@ -5,6 +5,16 @@ const router = express.Router();
 const gunsList = require("../Data/gunsList");
 const auth = require("../middleware/auth");
 
+const withPublicAssetUrls = (gun, req) => {
+    const publicBaseUrl = process.env.PUBLIC_BASE_URL || `${req.protocol}://${req.get("host")}`;
+
+    return {
+        ...gun,
+        banner: gun.banner.replace("http://localhost:3001", publicBaseUrl),
+        image: gun.image.replace("http://localhost:3001", publicBaseUrl)
+    };
+};
+
 /**
  * @swagger
  * /guns:
@@ -22,7 +32,7 @@ const auth = require("../middleware/auth");
  */
 router.get("/guns", auth, async (req, res) => {
     try {
-        res.send(gunsList);
+        res.send(gunsList.map((gun) => withPublicAssetUrls(gun, req)));
     } catch (err) {
         res.status(500).json({
             error: "Erro ao carregar armas"
@@ -68,7 +78,7 @@ router.get("/guns/:name", auth, (req, res) => {
             });
         }
 
-        res.status(200).json(guns);
+        res.status(200).json(withPublicAssetUrls(guns, req));
     } catch (err) {
         res.status(500).json({
             error: "Erro ao carregar a arma"

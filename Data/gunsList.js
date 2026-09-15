@@ -1,7 +1,7 @@
 const gunsList =[
     {
     name: "Lamina",
-    banner: "http://localhost:3001/imguns/angel_blade.jpg",
+    banner: "https://hunters-doc.onrender.com/imguns/angel_blade.jpg",
 
     origin: [
         "Forjada no Céu, feita de metal celestial.",
@@ -31,11 +31,11 @@ const gunsList =[
         "Pode ser retirada e usada contra o próprio anjo que a carrega."
     ],
 
-    image: "http://localhost:3001/imguns/angel_blade.jpg",
+    image: "https://hunters-doc.onrender.com/imguns/angel_blade.jpg",
     },
     {
     name: "Faca",
-    banner: "http://localhost:3001/imguns/demon_knife.jpg",
+    banner: "https://hunters-doc.onrender.com/imguns/demon_knife.jpg",
 
     origin: [
         "A origem exata da faca é desconhecida, mas foi trazida por Ruby, uma demônio que a utilizava para matar outros demônios.",
@@ -63,11 +63,11 @@ const gunsList =[
         "Ineficaz contra entidades muito poderosas como Arcanjos, Deus, Morte ou Leviatãs.",
         "Pode ser arrancada e usada contra o portador se não for manuseada com cuidado."
     ],
-    image: "http://localhost:3001/imguns/demon_knife.jpg",
+    image: "https://hunters-doc.onrender.com/imguns/demon_knife.jpg",
     },
     {
     name: "Colt",
-    banner: "http://localhost:3001/imguns/colt.jpg",
+    banner: "https://hunters-doc.onrender.com/imguns/colt.jpg",
 
     origin: [
         "Criada por Samuel Colt em 1835, um lendário caçador e armeiro.",
@@ -96,11 +96,11 @@ const gunsList =[
         "Sem as balas especiais, ela se torna uma arma comum.",
         "Munir a Colt exige materiais e rituais extremamente difíceis de encontrar/refazer."
     ],
-    image: "http://localhost:3001/imguns/colt.jpg",
+    image: "https://hunters-doc.onrender.com/imguns/colt.jpg",
     },
     {
     name: "Cajado",
-    banner: "http://localhost:3001/imguns/mark.jpg",
+    banner: "https://hunters-doc.onrender.com/imguns/mark.jpg",
 
     origin: [
         "Criado com base na Marca de Caim, o primeiro assassino bíblico.",
@@ -129,11 +129,11 @@ const gunsList =[
         "A Marca de Caim não pode ser removida facilmente, e liga o portador ao poder do próprio Lúcifer.",
         "A arma é perigosa não só para os inimigos, mas também para quem a utiliza."
     ],
-    image: "http://localhost:3001/imguns/mark.jpg"
+    image: "https://hunters-doc.onrender.com/imguns/mark.jpg"
     },
     {
     name: "Foice",
-    banner: "http://localhost:3001/imguns/death.jpg",
+    banner: "https://hunters-doc.onrender.com/imguns/death.jpg",
 
     origin: [
         "Pertence à entidade Morte, um dos Quatro Cavaleiros do Apocalipse.",
@@ -162,11 +162,11 @@ const gunsList =[
         "Se cair em mãos erradas, pode causar desequilíbrio cósmico.",
         "Se destruída (como acontece com Morte), a arma perde seu poder até ser herdada por outro avatar da Morte."
     ],
-    image: "http://localhost:3001/imguns/death.jpg",
+    image: "https://hunters-doc.onrender.com/imguns/death.jpg",
     },
     {
     name: "Lanca",
-    banner: "http://localhost:3001/imguns/miguel.jpg",
+    banner: "https://hunters-doc.onrender.com/imguns/miguel.jpg",
 
     origin: [
         "Criada pelo arcanjo Miguel como arma celestial definitiva.",
@@ -197,7 +197,7 @@ const gunsList =[
         "Se cair nas mãos erradas, pode se tornar uma ameaça catastrófica."
     ],
     
-    image: "http://localhost:3001/imguns/miguel.jpg"
+    image: "https://hunters-doc.onrender.com/imguns/miguel.jpg"
     },
 ]
 

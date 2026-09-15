@@ -5,6 +5,16 @@ const router = express.Router();
 const monstersList = require("../Data/monstersList");
 const auth = require("../middleware/auth");
 
+const withPublicAssetUrls = (monster, req) => {
+    const publicBaseUrl = process.env.PUBLIC_BASE_URL || `${req.protocol}://${req.get("host")}`;
+
+    return {
+        ...monster,
+        banner: monster.banner.replace("http://localhost:3001", publicBaseUrl),
+        image: monster.image.replace("http://localhost:3001", publicBaseUrl)
+    };
+};
+
 /**
  * @swagger
  * /monsters:
@@ -20,7 +30,7 @@ const auth = require("../middleware/auth");
  */
 router.get("/monsters", auth, async (req, res) => {
     try {
-        res.send(monstersList);
+        res.send(monstersList.map((monster) => withPublicAssetUrls(monster, req)));
     } catch (err) {
         res.status(500).json({
             error: "Erro ao carregar monstros"
@@ -68,7 +78,7 @@ router.get("/monsters/:name", auth, async (req, res) => {
             });
         }
 
-        res.status(200).json(monster);
+        res.status(200).json(withPublicAssetUrls(monster, req));
     } catch (err) {
         res.status(500).json({
             error: "Erro ao carregar o monstro"

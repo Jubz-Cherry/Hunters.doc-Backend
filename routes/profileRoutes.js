@@ -10,6 +10,15 @@ const { passwordResetLimiter } = require("../middleware/rate-limit");
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// A recuperacao por e-mail foi pausada ate que um dominio de envio seja
+// configurado e verificado no Resend. Manter as rotas responde de forma
+// previsivel sem executar nenhuma etapa de geracao ou validacao de codigo.
+const passwordRecoveryUnavailable = (req, res) => {
+    return res.status(503).json({
+        error: "A recuperacao de senha por e-mail esta temporariamente indisponivel."
+    });
+};
+
 /**
  * @swagger
  * /profile:
@@ -227,7 +236,7 @@ router.patch("/profile/password", auth, async (req, res) => {
  *       500:
  *         description: Erro ao solicitar recuperação de senha
  */
-router.post("/profile/forgot-password", passwordResetLimiter, async (req, res) => {
+router.post("/profile/forgot-password", passwordRecoveryUnavailable, passwordResetLimiter, async (req, res) => {
     try {
         const { email } = req.body;
 
@@ -320,7 +329,7 @@ router.post("/profile/forgot-password", passwordResetLimiter, async (req, res) =
  *       500:
  *         description: Erro ao verificar código de recuperação
  */
-router.post("/profile/verify-code", passwordResetLimiter, async (req, res) => {
+router.post("/profile/verify-code", passwordRecoveryUnavailable, passwordResetLimiter, async (req, res) => {
 
     try {
         const { email, resetToken } = req.body;
@@ -402,7 +411,7 @@ router.post("/profile/verify-code", passwordResetLimiter, async (req, res) => {
  *       500:
  *         description: Erro ao atualizar senha
  */
-router.patch("/profile/reset-password", passwordResetLimiter, async (req, res) => {
+router.patch("/profile/reset-password", passwordRecoveryUnavailable, passwordResetLimiter, async (req, res) => {
     try {
         const { token, novaSenha } = req.body;
 
