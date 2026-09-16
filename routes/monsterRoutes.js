@@ -10,8 +10,8 @@ const withPublicAssetUrls = (monster, req) => {
 
     return {
         ...monster,
-        banner: monster.banner.replace("http://localhost:3001", publicBaseUrl),
-        image: monster.image.replace("http://localhost:3001", publicBaseUrl)
+        banner: monster.banner.replace(/^https?:\/\/localhost:3001/, publicBaseUrl),
+        image: monster.image.replace(/^https?:\/\/localhost:3001/, publicBaseUrl)
     };
 };
 

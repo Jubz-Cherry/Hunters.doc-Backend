@@ -5,13 +5,21 @@ const router = express.Router();
 const gunsList = require("../Data/gunsList");
 const auth = require("../middleware/auth");
 
+const toPublicAssetUrl = (assetUrl, publicBaseUrl) => {
+    try {
+        return `${publicBaseUrl}${new URL(assetUrl).pathname}`;
+    } catch {
+        return assetUrl;
+    }
+};
+
 const withPublicAssetUrls = (gun, req) => {
     const publicBaseUrl = process.env.PUBLIC_BASE_URL || `${req.protocol}://${req.get("host")}`;
 
     return {
         ...gun,
-        banner: gun.banner.replace("http://localhost:3001", publicBaseUrl),
-        image: gun.image.replace("http://localhost:3001", publicBaseUrl)
+        banner: toPublicAssetUrl(gun.banner, publicBaseUrl),
+        image: toPublicAssetUrl(gun.image, publicBaseUrl)
     };
 };
 

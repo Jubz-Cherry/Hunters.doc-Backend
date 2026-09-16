@@ -1,3 +1,4 @@
+const { name } = require("ejs");
 
 const monstersList = [
   {
@@ -207,7 +208,93 @@ const monstersList = [
     ],
     
     image: "http://localhost:3001/imagens/fantasmas.jpg",
-    }
+    },
+    {
+    name: "Metamorfo (Shapeshifter)",
+    banner: "http://localhost:3001/imagens/metamorfo.jpg",
+    
+    origin: ["Criados pelo Metamorfo Alfa, descendente de Eva."],
+
+    description: ["Humanos mutantes com a habilidade biológica de mimetizar perfeitamente a estrutura física de qualquer outro ser humano."],
+
+    reports: ["Metamorfos costumam se infiltrar entre os humanos assumindo identidades roubadas e podem permanecer ocultos por longos períodos."],
+
+    appearance: [
+      "Sua forma original é desconhecida ou irrelevante.",
+      "Quando transformados, duplicam roupas, DNA e feições da vítima.",
+      "Seus olhos emitem um brilho térmico característico quando gravados por câmeras de vídeo."],
+    
+    behavior: [
+      "Geralmente solitários.",
+      "Costumam se infiltrar na vida de suas vítimas para roubar dinheiro," +
+      "bens ou viver identidades falsas. Alguns desenvolvem obsessões doentias pelas pessoas que copiam."],
+    
+    transformation: [
+      "Habilidade congênita e genética.",
+      "Eles alteram a própria estrutura arrancando fisicamente a pele velha e os dentes antigos para revelar a nova forma por baixo."],
+    
+    cure: ["Não se aplica por ser uma condição genética de nascimento."],
+    
+    weaknesses: ["Prata pura perfurando o coração."],
+
+    image: "http://localhost:3001/imagens/metamorfo.jpg",
+    },
+    {
+    name: "Ghoul (Carniçal)",
+    banner: "http://localhost:3001/imagens/ghoul.jpg",
+
+    origin: ["Mitologia antiga do Oriente Médio, associados a Eva."],
+    
+    description: ["Monstros necrófagos que profanam túmulos para se alimentar da carne de indivíduos recém-falecidos."],
+
+    reports: ["Ghouls vivem disfarçados entre os humanos e usam cemitérios e necrotérios como território de caça."],
+    
+    appearance: [
+      "Em seu estado natural, possuem pele pálida e dentes modificados para rasgar carne.",
+      "No entanto, raramente são vistos assim, pois assumem a forma exata da última pessoa que comeram."],
+    
+      behavior: [
+      "Vivem disfarçados entre os humanos," +
+      "muitas vezes trabalhando em necrotérios ou cemitérios para facilitar o acesso à comida. ",
+      "São vingativos se os seus ninhos forem ameaçados."],
+    
+      transformation: ["É uma espécie biológica nativa.",
+        "Humanos não se transformam em ghouls."],
+    
+      cure: ["Não existe cura disponível."],
+    
+      weaknesses: ["Decapitação completa ou destruição total do cérebro."],
+    
+      image: "http://localhost:3001/imagens/ghoul.jpg",
+    },
+    {
+    name: "Rugaru",
+    banner: "http://localhost:3001/imagens/rugaru.jpg",
+
+    origin: ["Lendas franco-americanas (Cajun)."],
+
+    description: ["Humano que carrega uma terrível mutação genética adormecida que se manifesta mais tarde na vida."],
+
+    reports: ["A transformação do Rugaru é irreversível depois do primeiro contato com carne humana, tornando a contenção imediata essencial."],
+
+    appearance: ["Inicialmente humano. Quando a mutação atinge o ápice," +
+      "seus ossos se alteram, seus dentes mudam, os olhos ficam completamente negros e a pele ganha aspecto rústico."],
+    
+    behavior: [
+      "Começa com uma fome insaciável por tudo," +
+      "que rapidamente evolui para um desejo incontrolável por carne humana.",
+      "Após provar a carne pela primeira vez, perde o livre arbítrio."],
+    
+    transformation: [
+      "Passada hereditariamente.",
+      "O gatilho final ocorre no momento exato em que o portador do gene consome um pedaço de carne humana."],
+    
+    cure: ["Não há cura biológica ou mágica uma vez que o gene é ativado pela alimentação."],
+    
+    weaknesses: ["Fogo (incineração total do corpo)."],
+    
+    image: "http://localhost:3001/imagens/rugaru.jpg",
+    },
 ];
 
 module.exports = monstersList;
