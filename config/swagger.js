@@ -13,7 +13,7 @@ const options = {
 
         servers: [
             {
-                url: "http://localhost:3001"
+                url: process.env.PUBLIC_BASE_URL || "http://localhost:3001"
             }
         ],
 
@@ -32,6 +32,7 @@ const options = {
         path.resolve(__dirname, "../routes/authRoutes.js"),
         path.resolve(__dirname, "../routes/monsterRoutes.js"),
         path.resolve(__dirname, "../routes/gunRoutes.js"),
+        path.resolve(__dirname, "../routes/markRoutes.js"),
         path.resolve(__dirname, "../routes/profileRoutes.js"),
         path.resolve(__dirname, "../routes/notesRoutes.js")
     ]

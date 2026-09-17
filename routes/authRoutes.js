@@ -35,11 +35,19 @@ const { authLimiter } = require("../middleware/rate-limit");
  */
 router.post("/register", authLimiter, async (req, res) => {
     try {
-        const { name, email, senha } = req.body;
+        const name = String(req.body.name || "").trim();
+        const email = String(req.body.email || "").trim().toLowerCase();
+        const senha = String(req.body.senha || "");
 
         if (!name || !email || !senha) {
             return res.status(400).json({
                 error: "Todos os campos são obrigatórios"
+            });
+        }
+
+        if (senha.length < 6) {
+            return res.status(400).json({
+                error: "A senha deve ter pelo menos 6 caracteres"
             });
         }
 
@@ -100,7 +108,8 @@ router.post("/register", authLimiter, async (req, res) => {
  *         description: Email ou senha inválidos
  */
 router.post("/login", authLimiter, async (req, res) => {
-    const { email, senha } = req.body;
+    const email = String(req.body.email || "").trim().toLowerCase();
+    const senha = String(req.body.senha || "");
 
     if (!email || !senha) {
         return res.status(400).json({

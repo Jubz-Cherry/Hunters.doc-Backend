@@ -81,6 +81,8 @@ router.get("/profile", auth, async (req, res) => {
  *                 type: string
  *               email:
  *                 type: string
+ *               bio:
+ *                 type: string
  *     responses:
  *       200:
  *         description: Usuário atualizado com sucesso
@@ -93,7 +95,7 @@ router.get("/profile", auth, async (req, res) => {
  */
 router.patch("/profile/change", auth, async (req, res) => { 
     try {
-        const { name, email } = req.body;
+        const { name, email, bio } = req.body;
 
         if (!name || !email) {
             return res.status(400).json({
@@ -101,11 +103,15 @@ router.patch("/profile/change", auth, async (req, res) => {
             });
         }
 
+        if (typeof bio !== 'undefined' && (typeof bio !== 'string' || bio.length > 280)) {
+            return res.status(400).json({ error: "A biografia deve ter até 280 caracteres" });
+        }
+
         const userChange = await users.findByIdAndUpdate(
             req.user.userId,
-            { name, email },
+            { name, email, ...(typeof bio === 'string' ? { bio: bio.trim() } : {}) },
             { new: true }
-        ).select("-senha");
+        ).select("-senha -resetPasswordToken -resetPasswordExpires");
 
         if (!userChange) {
             return res.status(404).json({

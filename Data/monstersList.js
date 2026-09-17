@@ -210,7 +210,7 @@ const monstersList = [
     image: "http://localhost:3001/imagens/fantasmas.jpg",
     },
     {
-    name: "Metamorfo (Shapeshifter)",
+    name: "Metamorfo",
     banner: "http://localhost:3001/imagens/metamorfo.jpg",
     
     origin: ["Criados pelo Metamorfo Alfa, descendente de Eva."],
@@ -295,6 +295,54 @@ const monstersList = [
     
     image: "http://localhost:3001/imagens/rugaru.jpg",
     },
+    {
+    name: "Naves Estelares Jefferson",
+    banner: "http://localhost:3001/imagens/jefferson-starships.jpg",
+
+    origin:[ "Criadas diretamente por Eva durante a 6ª temporada."],
+
+    description: ["Híbridos geneticamente modificados criados para serem os predadores definitivos contra os humanos e caçadores."],
+
+    appearance: ["Aparentam ser humanos comuns, mas conseguem exteriorizar dentes retráteis de vampiro e "+
+      "garras estendidas de lobisomem ao mesmo tempo."],
+
+    behavior: ["Agem como soldados coordenados sob o comando psíquico direto de Eva.",
+      "São extremamente violentos e implacáveis."],
+
+    transformation: ["Infectam humanos através de mordidas múltiplas que reconfiguram o DNA do alvo em minutos."],
+
+    cure: ["Não há cura conhecida."],
+
+    weaknesses: ["Desconhecida..."],
+
+    image: "http://localhost:3001/imagens/jefferson-starships.jpg",
+  },
+  {
+    name: "Leviatã",
+    banner: "http://localhost:3001/imagens/leviathan.jpg",
+
+    origin: ["Criados por Deus antes dos humanos e dos anjos, trancados no Purgatório."],
+
+    description: ["Monstros primordiais com fome infinita, capazes de consumir qualquer forma de vida e mimetizar qualquer estrutura molecular."],
+
+    appearance: [
+      "Sua verdadeira forma é uma massa preta gosmenta. Quando assumem corpos humanos,"+
+      "revelam mandíbulas gigantescas repletas de dentes afiados que se abrem dividindo a cabeça ao meio."],
+
+    behavior: [
+      "Extremamente inteligentes, corporativos e frios.",
+      "Planejam de forma sistemática e industrializaram a raça humana como gado usando aditivos químicos na comida."],
+
+    transformation: ["Eles não transformam humanos. Eles absorvem o DNA da pessoa através de um toque e clonam o indivíduo perfeitamente, descartando o original."],
+
+    cure: ["Não aplicável."],
+
+    weaknesses: [
+    "Substâncias químicas à base de Bórax (causam queimaduras ácidas severas) e decapitação (atrasa a regeneração).",
+    "Podem ser mortos definitivamente apenas pelo Osso de um Mortal Justo banhado no sangue de três caídos (um anjo, um alfa e um demônio)."],
+
+    image: "http://localhost:3001/imagens/leviathan.jpg",
+  }
 ];
 
 module.exports = monstersList;
