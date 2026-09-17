@@ -17,7 +17,7 @@ const marksList = [
     
     },
     {
-      name: "Tatuagem Antipossessão (Anti-Possession Tattoo)",
+      name: "Tatuagem Antipossessão",
     
       origin: "Criada por caçadores antigos e passada de geração em geração. Sam e Dean a tatuam no peito na segunda temporada da série.",
     
@@ -33,7 +33,7 @@ const marksList = [
     
     },
     {
-      name: "Símbolo de Banimento de Anjos (Angel Banishing Sigil)",
+      name: "Símbolo de Banimento de Anjos",
     
       origin: "Magia angelical antiga gravada na história cósmica. Anna Milton lembra-se dele, e Castiel o usa frequentemente.",
     
@@ -65,7 +65,7 @@ const marksList = [
     
     },
     {
-      name: "Símbolos Enoquianos nas Costelas (Enochian Rib Carvings)",
+      name: "Símbolos Enoquianos nas Costelas",
     
       origin: "Gravados cirurgicamente nos ossos de Sam e Dean pelo anjo Castiel (e mais tarde por outros anjos em si mesmos).",
     
@@ -81,7 +81,7 @@ const marksList = [
     
     },
     {
-      name: "Armadilha de Demônios (Devil's Trap)",
+      name: "Armadilha de Demônios",
     
       origin: "Baseada na Chave de Salomão, um grimório medieval de magia. É a ferramenta mais usada pelos caçadores na série.",
     
@@ -97,7 +97,7 @@ const marksList = [
     
     },
     {
-      name: "Símbolo de Aprisionamento de Anjos (Angel Trap)",
+      name: "Símbolo de Aprisionamento de Anjos",
     
       origin: "Magia enochiana antiga usada para caçar ou controlar mensageiros do céu.",
     
@@ -113,7 +113,7 @@ const marksList = [
     
     },
     {
-      name: "A Queimadura de Castiel (Cas's Handprint)",
+      name: "A Queimadura de Castiel",
     
       origin: "Criada pelo anjo Castiel no momento exato em que ele desceu ao Inferno para resgatar a alma de Dean Winchester.",
     
@@ -129,7 +129,7 @@ const marksList = [
     
     },
     {
-      name: "O Símbolo Ceifador (Reaper Trap)",
+      name: "O Símbolo Ceifado",
      
       origin: "Criada por magos antigos e necromantes para subjugar os guias da morte. Aparece proeminentemente quando Bobby tenta prender uma ceifeira.",
      
@@ -145,7 +145,7 @@ const marksList = [
     
     },
     {
-      name: "A Marca de Alastair (Símbolo de Tortura Infernal)",
+      name: "A Marca de Alastair",
       
       origin: "Desenvolvida por Alastair, o torturador-chefe do Inferno.",
       
@@ -161,7 +161,7 @@ const marksList = [
     
     },
     {
-      name: "Selo dos Quatro Cavaleiros (The Four Horsemen Rings/Sigils)",
+      name: "Selo dos Quatro Cavaleiros",
       
       origin: "Símbolos e runas ligados aos anéis mágicos dos Quatro Cavaleiros do Apocalipse (Guerra, Fome, Peste e Morte).",
       
