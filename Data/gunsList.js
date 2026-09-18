@@ -199,6 +199,31 @@ const gunsList =[
     
     image: "https://hunters-doc.onrender.com/imguns/miguel.jpg"
     },
+    {
+    name: "Bomba de Almas",
+    banner: "https://hunters-doc.onrender.com/imguns/soul_bomb.jpg",
+    
+    origin: [
+      "Construída por Castiel, Rowena e os Winchesters na 11ª temporada.",
+      "Criada reunindo milhares de almas do Cemitério e do Inferno para formar uma massa de energia pura."
+    ],
+    description: [
+      "Uma concentração massiva de luz e poder contida dentro do corpo de um hospedeiro (Dean Winchester).",
+      "Projetada como um artefato suicida supremo de antimatéria espiritual."
+    ],
+    usage: [
+      "Desenvolvida com o único propósito de destruir a Escuridão (Amara)."
+    ],
+    custom: [
+      "A energia equivale ao poder de uma estrela em colapso e brilha intensamente através da pele do portador.",
+      "A explosão destruiria a alma do portador junto com o alvo."
+    ],
+    weaknesses: [
+      "Extremamente instável e perigosa de ser montada.",
+      "Requer a contenção de centenas de milhares de almas humanas."
+    ],
+    image: "https://hunters-doc.onrender.com/imguns/soul_bomb.jpg"
+  }
 ]
 
 module.exports = gunsList;
