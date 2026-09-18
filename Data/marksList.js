@@ -1,7 +1,7 @@
 const marksList = [
     {
       name: "A Marca de Caim",
-      banner: "https://hunters-doc.onrender.com/imguns/caim_mark.jpg",
+      banner: "https://hunters-doc.onrender.com/imgmark/caim_mark.jpg",
     
       origin: "Criada por Deus no início dos tempos para servir como uma chave para trancar a Escuridão (Amara). Deus a deu a Lúcifer, que a passou para Caim, e Caim a transferiu para Dean Winchester.",
     
@@ -13,11 +13,13 @@ const marksList = [
     
       effects_on_person: "Causa uma sede de sangue incontrolável, raiva extrema, pesadelos violentos e corrupção total da alma, transformando qualquer pessoa boa em um monstro.",
     
-      weakness: "Pode ser removida com um feitiço do Livro dos Condenados, mas removê-la sem passá-la para outra pessoa liberta a Escuridão no mundo."
+      weakness: "Pode ser removida com um feitiço do Livro dos Condenados, mas removê-la sem passá-la para outra pessoa liberta a Escuridão no mundo.",
     
+      image: "https://hunters-doc.onrender.com/imgmark/caim_mark.jpg"
     },
     {
       name: "Tatuagem Antipossessão",
+      banner: "https://hunters-doc.onrender.com/imgmark/anti_possession_tattoo.jpg",
     
       origin: "Criada por caçadores antigos e passada de geração em geração. Sam e Dean a tatuam no peito na segunda temporada da série.",
     
@@ -29,11 +31,13 @@ const marksList = [
     
       effects_on_person: "Nenhum efeito colateral negativo na mente ou no corpo; funciona apenas como uma barreira passiva.",
     
-      weakness: "Se a pele onde a tatuagem está for cortada, queimada ou desfigurada, o símbolo é quebrado e o demônio pode possuir o corpo imediatamente."
+      weakness: "Se a pele onde a tatuagem está for cortada, queimada ou desfigurada, o símbolo é quebrado e o demônio pode possuir o corpo imediatamente.",
     
+      image: "https://hunters-doc.onrender.com/imgmark/anti_possession_tattoo.jpg"
     },
     {
       name: "Símbolo de Banimento de Anjos",
+      banner: "https://hunters-doc.onrender.com/imgmark/angel_banishment_symbol.jpg",
     
       origin: "Magia angelical antiga gravada na história cósmica. Anna Milton lembra-se dele, e Castiel o usa frequentemente.",
     
@@ -45,11 +49,13 @@ const marksList = [
     
       effects_on_person: "Exige que seja desenhado com sangue humano real. Ativar o símbolo exige bater a mão aberta com força no centro dele, o que pode causar dor ou cansaço.",
     
-      weakness: "É temporário. O símbolo não mata e nem machuca permanentemente os anjos; eles podem voar de volta para o local assim que descobrirem onde foram parar."
+      weakness: "É temporário. O símbolo não mata e nem machuca permanentemente os anjos; eles podem voar de volta para o local assim que descobrirem onde foram parar.",
     
+      image: "https://hunters-doc.onrender.com/imgmark/angel_banishment_symbol.jpg"
     },
     {
       name: "Hexagrama Unicursal (Estrela dos Homens de Letras)",
+      banner: "https://hunters-doc.onrender.com/imgmark/hexagram.jpg",
     
       origin: "Símbolo oficial dos Homens de Letras, uma sociedade secreta que estuda o sobrenatural de forma científica.",
     
@@ -61,11 +67,13 @@ const marksList = [
     
       effects_on_person: "Não altera o corpo humano diretamente, mas serve como um selo de autoridade mística.",
     
-      weakness: "Por ser apenas um símbolo organizacional e de tranca, não oferece proteção física direta contra ataques de monstros fortes se não estiver energizado por feitiços extras."
+      weakness: "Por ser apenas um símbolo organizacional e de tranca, não oferece proteção física direta contra ataques de monstros fortes se não estiver energizado por feitiços extras.",
     
+      image: "https://hunters-doc.onrender.com/imgmark/hexagram.jpg"
     },
     {
       name: "Símbolos Enoquianos nas Costelas",
+      banner: "https://hunters-doc.onrender.com/imgmark/enochian_runes.jpg",
     
       origin: "Gravados cirurgicamente nos ossos de Sam e Dean pelo anjo Castiel (e mais tarde por outros anjos em si mesmos).",
     
@@ -77,11 +85,13 @@ const marksList = [
     
       effects_on_person: "Causa uma dor física insuportável no momento em que as runas são esculpidas. Não altera a mente do portador.",
     
-      weakness: "Não esconde a pessoa de ameaças humanas, monstros comuns ou de rastreamento físico tradicional (como pegadas ou câmeras)."
+      weakness: "Não esconde a pessoa de ameaças humanas, monstros comuns ou de rastreamento físico tradicional (como pegadas ou câmeras).",
     
+      image: "https://hunters-doc.onrender.com/imgmark/enochian_runes.jpg"
     },
     {
       name: "Armadilha de Demônios",
+      banner: "https://hunters-doc.onrender.com/imgmark/demon_trap.jpg",
     
       origin: "Baseada na Chave de Salomão, um grimório medieval de magia. É a ferramenta mais usada pelos caçadores na série.",
     
@@ -93,11 +103,13 @@ const marksList = [
     
       effects_on_person: "Não afeta seres humanos comuns. Nos demônios, causa grande aflição física e os deixa vulneráveis a interrogatórios e exorcismos.",
     
-      weakness: "Qualquer quebra física na linha do desenho (como um arranhão no giz, um rasgo no tapete ou lama cobrindo uma parte) quebra o feitiço instantaneamente e liberta o demônio."
+      weakness: "Qualquer quebra física na linha do desenho (como um arranhão no giz, um rasgo no tapete ou lama cobrindo uma parte) quebra o feitiço instantaneamente e liberta o demônio.",
     
+      image: "https://hunters-doc.onrender.com/imgmark/demon_trap.jpg"
     },
     {
-      name: "Símbolo de Aprisionamento de Anjos",
+      name: "Símbolo de Aprisionamento de Anjos (Fogo Sagrado)",
+      banner: "https://hunters-doc.onrender.com/imgmark/holy_fire.jpg",
     
       origin: "Magia enochiana antiga usada para caçar ou controlar mensageiros do céu.",
     
@@ -109,11 +121,14 @@ const marksList = [
     
       effects_on_person: "Não afeta humanos, mas se o anjo tentar tocar nas chamas sagradas, sua casca humana e sua essência serão destruídas,",
     
-      weakness: "Se a linha de óleo for interrompida por algum objeto externo jogado de fora (como água ou terra), o fogo se apaga e o anjo escapa."
+      weakness: "Se a linha de óleo for interrompida por algum objeto externo jogado de fora (como água ou terra), o fogo se apaga e o anjo escapa.",
+
+      image: "https://hunters-doc.onrender.com/imgmark/holy_fire.jpg"
     
     },
     {
       name: "A Queimadura de Castiel",
+      banner: "https://hunters-doc.onrender.com/imgmark/castiel_burn.jpg",
     
       origin: "Criada pelo anjo Castiel no momento exato em que ele desceu ao Inferno para resgatar a alma de Dean Winchester.",
     
@@ -125,11 +140,14 @@ const marksList = [
     
       effects_on_person: "Serviu como uma âncora para reconstruir o corpo de Dean exatamente como era antes de morrer.",
      
-      weakness: "É apenas uma cicatriz física residual e não oferece proteção mágica ativa contra outros perigos."
+      weakness: "É apenas uma cicatriz física residual e não oferece proteção mágica ativa contra outros perigos.",
+
+      image: "https://hunters-doc.onrender.com/imgmark/castiel_burn.jpg"
     
     },
     {
       name: "O Símbolo Ceifado",
+      banner: "https://hunters-doc.onrender.com/imgmark/reaper_trap.jpg",
      
       origin: "Criada por magos antigos e necromantes para subjugar os guias da morte. Aparece proeminentemente quando Bobby tenta prender uma ceifeira.",
      
@@ -141,11 +159,14 @@ const marksList = [
      
       effects_on_person: "Deixa o conjurador exposto à fúria da própria Morte se algo der errado.",
       
-      weakness: "Exige sangue humano na confecção e, assim como as outras armadilhas, se o desenho for borrado ou rasgado, perde o efeito."
+      weakness: "Exige sangue humano na confecção e, assim como as outras armadilhas, se o desenho for borrado ou rasgado, perde o efeito.",
+
+      image: "https://hunters-doc.onrender.com/imgmark/reaper_trap.jpg"
     
     },
     {
       name: "A Marca de Alastair",
+      banner: "https://hunters-doc.onrender.com/imgmark/alastair_mark.jpg",   
       
       origin: "Desenvolvida por Alastair, o torturador-chefe do Inferno.",
       
@@ -157,11 +178,14 @@ const marksList = [
       
       effects_on_person: "Causa imensa dor espiritual e enfraquece a vontade do prisioneiro ao longo do tempo.",
     
-      weakness: "O símbolo precisa ser ativado com rituais de dor constantes; se o torturador for interrompido, o prisioneiro pode tentar lutar contra a contenção."
+      weakness: "O símbolo precisa ser ativado com rituais de dor constantes; se o torturador for interrompido, o prisioneiro pode tentar lutar contra a contenção.",
+
+      image: "https://hunters-doc.onrender.com/imgmark/alastair_mark.jpg"
     
     },
     {
       name: "Selo dos Quatro Cavaleiros",
+      banner: "https://hunters-doc.onrender.com/imgmark/four_knights_seal.jpg",
       
       origin: "Símbolos e runas ligados aos anéis mágicos dos Quatro Cavaleiros do Apocalipse (Guerra, Fome, Peste e Morte).",
       
@@ -173,7 +197,9 @@ const marksList = [
       
       effects_on_person: "Permite que o conjurador manipule o portal e controle o fluxo de almas entre o mundo dos vivos e o Inferno.",
       
-      weakness: "A eficácia do selo depende da integridade das pedras coloridas; se alguma for danificada, o selo pode falhar."
+      weakness: "A eficácia do selo depende da integridade das pedras coloridas; se alguma for danificada, o selo pode falhar.",
+
+      image: "https://hunters-doc.onrender.com/imgmark/four_knights_seal.jpg"
     
     },
 ]

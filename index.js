@@ -65,6 +65,10 @@ app.use(
     "/imguns",
     express.static(path.join(__dirname, "public/imguns"))
 );
+app.use(
+    "/imgmark",
+    express.static(path.join(__dirname, "public/imgmark"))
+);
 
 
 // Rotas públicas

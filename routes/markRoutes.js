@@ -15,7 +15,7 @@ const normalizeAssetUrl = (assetUrl, publicBaseUrl) => {
         if (parsed.hostname === "localhost" || parsed.hostname === "127.0.0.1") {
             return `${publicBaseUrl}${parsed.pathname}`;
         }
-        return assetUrl;
+        return assetUrl.replace("/imguns/", "/imgmark/");
     } catch {
         return assetUrl;
     }
